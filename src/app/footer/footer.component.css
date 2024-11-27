@@ -1,0 +1,63 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-weight: 400;
+    word-wrap: break-word;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.container{
+    margin: 0px;
+    width: 100% !important;
+
+}
+footer {
+    font-size: 0.9rem;
+  }
+  
+  footer h6 {
+    font-weight: bold;
+  }
+  
+  footer ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+  
+  footer ul li {
+    margin-bottom: 8px;
+  }
+  
+  footer ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  @media (max-width: 768px) {
+    footer .col-md-4 {
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+  
+    footer .col-md-8 {
+      text-align: center;
+    }
+  
+    footer ul li {
+      margin-bottom: 4px;
+    }
+  }
+
+  .flex-btn-space{
+    display: flex;
+    justify-content: space-between;
+
+  }
+  
