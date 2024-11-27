@@ -18,16 +18,13 @@
     background-color: #f8f9fa;
 }
 .custom-navbar {
-    width: 1440px;
     height: 104px;
-    max-width: 100%; /* Ensures responsiveness */
-    margin: 0 auto; /* Centers the navbar */
+    max-width: 100%; 
+    margin: 0 auto;
 }
-img[_ngcontent-ng-c1273260300],
-svg[_ngcontent-ng-c1273260300] {
-    vertical-align: middle;
-    width: 100%;
-    height: 100%;
+img {
+    margin-left: 25px;
+    width: 200px;
 }
 
 .navbar .btn {

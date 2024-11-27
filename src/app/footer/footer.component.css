@@ -57,7 +57,21 @@ footer {
 
   .flex-btn-space{
     display: flex;
-    justify-content: space-between;
-
+    justify-content:space-between;
+  }
+  .flex-space { display: flex; margin-left: 20px; } 
+  
+  .flex-space > * { 
+     margin-left: inherit; 
+  }
+  .d-flex{
+    flex-direction: column;
   }
   
+  .mg-10{
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  img{
+    width: 200px;
+  }
