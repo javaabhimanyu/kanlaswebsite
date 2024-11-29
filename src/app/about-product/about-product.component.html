@@ -1,0 +1,87 @@
+<div class="value-header flex-dir text-center">
+    <p>How can we benefit you?</p>
+    <h1>About Our Products</h1>
+</div>
+
+<div class="container bg-image py-5">
+    <div class="row align-items-center">
+        <!-- Left Side Buttons -->
+        <div class="col-md-6 d-flex flex-column align-items-start">
+            <div class="button-container d-flex flex-column align-items-start me-4">
+                <button class="btn mb-3 d-flex align-items-center"
+                    [ngClass]="{ 'btn-primary': activeCard === 'loya', 'btn-light': activeCard !== 'loya' }"
+                    (click)="showCard('loya')">
+                    <i class="bi bi-arrow-right me-2"></i> LOYA
+                    <i class="ri-arrow-right-s-line"></i>
+                </button>
+                <button class="btn mb-3 d-flex align-items-center"
+                    [ngClass]="{ 'btn-primary': activeCard === 'reppoo', 'btn-light': activeCard !== 'reppoo' }"
+                    (click)="showCard('reppoo')">
+                    <i class="bi bi-arrow-right me-2"></i> Reppoo
+                    <i class="ri-arrow-right-s-line"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Right Side Cards -->
+        <div class="col-md-6">
+            <div class="first rounded border ">
+                <p>Our Guiding Principle</p>
+                <span><i class="ri-emotion-laugh-fill"></i></span>
+                <h6>Customer First</h6>
+            </div>
+            <!-- LOYA Card -->
+            <div *ngIf="activeCard === 'loya'" class="loya-container">
+                <div class="container-icon">
+                </div>
+                <div class="loya-header text-left">
+                    <h3>LOYA</h3>
+                </div>
+                <div class="icon-grid row">
+                    <!-- Using Angular's ngFor directive -->
+                    <div class="col-6 col-md-4 d-flex justify-content-center mb-3" *ngFor="let icon of icons">
+                        <div class="icon-container">
+                            <i [class]="icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="loya-description">
+                    <p>
+                        A short description about the LOYA product and what it does in order to direct the user
+                        towards the CTA.
+                    </p>
+                </div>
+                <button class="btn btn-dark cta-button">Learn More</button>
+            </div>
+
+            <!-- Reppoo Card -->
+            <div *ngIf="activeCard === 'reppoo'" class="reppoo-container">
+                <div class="container-icon">
+                    <div class="first">
+                        <p>Our Guiding Principle</p>
+                        <i class="ri-emotion-laugh-fill"></i>
+                        <h6>Customer First</h6>
+                    </div>
+                </div>
+                <div class="loya-header text-left">
+                    <h3>Reppoo</h3>
+                </div>
+                <div class="icon-grid row">
+                    <!-- Using Angular's ngFor directive -->
+                    <div class="col-6 col-md-4 d-flex justify-content-center mb-3" *ngFor="let icon of Reppoo">
+                        <div class="icon-container">
+                            <i [class]="icon"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="loya-description">
+                    <p>
+                        A short description about the reppoo product and what it does in order to direct the user
+                        towards the CTA.
+                    </p>
+                </div>
+                <button class="btn btn-dark cta-button">Learn More</button>
+            </div>
+        </div>
+    </div>
+</div>

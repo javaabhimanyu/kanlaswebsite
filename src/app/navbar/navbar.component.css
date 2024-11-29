@@ -7,24 +7,32 @@
     font-style: normal;
     font-weight: 400;
     word-wrap: break-word;
-    font-size: 16px;
+    /* font-size: 16px; */
     color: #606060;
 }
-.navbar .container-fluid{
+
+.navbar .container-fluid {
     display: flex;
     flex-wrap: inherit;
     align-items: center;
     justify-content: space-between;
     background-color: #f8f9fa;
 }
+
 .custom-navbar {
+    width: 1440px;
     height: 104px;
-    max-width: 100%; 
+    max-width: 100%;
+    /* Ensures responsiveness */
     margin: 0 auto;
+    /* Centers the navbar */
 }
-img {
-    margin-left: 25px;
-    width: 200px;
+
+img[_ngcontent-ng-c1273260300],
+svg[_ngcontent-ng-c1273260300] {
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
 }
 
 .navbar .btn {
@@ -105,35 +113,38 @@ a:hover:before {
 /* Default Text Color */
 .navbar .nav-link {
     color: rgba(96, 96, 96, 1);
-    ; /* Blue text */
+    ;
+    /* Blue text */
     transition: color 0.3s ease;
-  }
-  
- 
-  .navbar .nav-link:hover {
-    color: #000000; 
-  }
-  
-  /* Dropdown Hover Effect */
-  .navbar .dropdown-item:hover {
-    background-color: #f8f9fa; 
-  }
-  
-  /* Contact Button Styling */
-  .navbar .btn {
+}
+
+
+.navbar .nav-link:hover {
+    color: #000000;
+}
+
+/* Dropdown Hover Effect */
+.navbar .dropdown-item:hover {
+    background-color: #f8f9fa;
+}
+
+/* Contact Button Styling */
+.navbar .btn {
     font-weight: bold;
     transition: background-color 0.3s ease;
-  }
-  
-  .navbar .btn:hover {
-    background-color: #343a40; 
-  }
-  .navbar-nav .nav-link {
+}
+
+.navbar .btn:hover {
+    background-color: #343a40;
+}
+
+.navbar-nav .nav-link {
     font-size: 16px;
     font-weight: 400;
     align-items: center;
     line-height: 20.83px;
-    transition: font-weight 0.3s ease; /* Smooth hover effect */
+    transition: font-weight 0.3s ease;
+    /* Smooth hover effect */
 }
 
 /* Hover Effect */
@@ -156,6 +167,7 @@ a:hover:before {
 .navbar-nav .btn:hover {
     font-weight: 600;
 }
+
 #navBar {
     position: fixed;
     width: 100vw;
@@ -163,10 +175,10 @@ a:hover:before {
     background-color: #DEDEDE;
     transition: 0.2s;
     display: flex;
-  }
-  
-  .floatingNav {
-    width: calc(100vh - 100px); 
+}
+
+.floatingNav {
+    width: calc(100vh - 100px);
     border-radius: 2px;
     box-shadow: 0px 1px 10px #999;
-  }
+}

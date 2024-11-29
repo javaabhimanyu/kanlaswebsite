@@ -1,77 +1,60 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
-
-* {
-    margin: 0px;
-    padding: 0px;
-    font-family: "DM Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
-    font-style: normal;
-    font-weight: 400;
-    word-wrap: break-word;
-    color: #ffffff;
-    background-color: #000000;
-}
-
-.container{
-    margin: 0px;
-    width: 100% !important;
-
-}
-footer {
-    font-size: 0.9rem;
-  }
-  
-  footer h6 {
-    font-weight: bold;
+.footer-logo {
+    max-width: 150px;
+    height: auto;
   }
   
   footer ul {
     padding: 0;
-    margin: 0;
     list-style: none;
   }
   
-  footer ul li {
-    margin-bottom: 8px;
+  footer ul li a {
+    text-decoration: none;
+    transition: color 0.3s;
   }
   
   footer ul li a:hover {
-    text-decoration: underline;
+    color: #f39c12;
   }
   
-  @media (max-width: 768px) {
-    footer .col-md-4 {
-      text-align: center;
-      margin-bottom: 1rem;
+  h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  @media (max-width: 576px) {
+    .footer-logo {
+      margin-bottom: 20px;
     }
   
-    footer .col-md-8 {
+    h6 {
       text-align: center;
     }
   
-    footer ul li {
-      margin-bottom: 4px;
+    ul {
+      text-align: center;
     }
   }
+  
+  .col-md-6{display: flex;
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 24px;
 
-  .flex-btn-space{
-    display: flex;
-    justify-content:space-between;
-  }
-  .flex-space { display: flex; margin-left: 20px; } 
-  
-  .flex-space > * { 
-     margin-left: inherit; 
-  }
-  .d-flex{
-    flex-direction: column;
-  }
-  
-  .mg-10{
-    margin-left: 25px;
-    margin-right: 25px;
-  }
-  img{
-    width: 200px;
-  }
+width: 334px;
+height: 125px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+    }
+
+
+
+
+

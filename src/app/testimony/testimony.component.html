@@ -1,0 +1,49 @@
+<div class="value-card">
+    <div class="value-header text-center mb-4">
+        <p class="text-secondary mb-1">What our team has to say?</p>
+        <h1 class="fw-bold">Testimony</h1>
+    </div>
+
+    <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" *ngFor="let item of data; let i = index" data-bs-target="#testimonialCarousel"
+                [attr.data-bs-slide-to]="i" [class.active]="i === 0" aria-current="i === 0 ? 'true' : undefined"
+                [attr.aria-label]="'Slide ' + (i + 1)"></button>
+        </div>
+
+        <!-- Carousel Items -->
+        <div class="carousel-inner">
+            <div *ngFor="let item of data; let i = index" class="carousel-item" [class.active]="i === 0">
+                <div class="card shadow-sm border rounded-3 p-4 d-flex flex-md-row flex-column align-items-center">
+                    <!-- Left Section: Profile Info -->
+                    <div class="left-section text-center text-md-start mb-3 mb-md-0 border shadow">
+                        <img src="assets/images/log.png" alt="{{ item.name }}"
+                            class="rounded-circle img-fluid shadow-sm mb-3" style="width: 120px; height: 120px;" />
+                        <h5 class="mb-1">{{ item.name }}</h5>
+                        <p class="text-muted small">{{ item.role }}</p>
+                    </div>
+
+                    <!-- Right Section: Quote & Description -->
+                    <div class="right-section ms-md-4 text-center text-md-start border shadow">
+                        <div class="text-end">
+                            <i class="ri-double-quotes-r"></i>
+                        </div>
+                        <h5 class="fw-bold mb-3">{{ item.quote }}</h5>
+                        <p class="text-muted">{{ item.description }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+            <span class="ri-arrow-left-line" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+            <span class="ri-arrow-right-line" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>

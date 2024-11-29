@@ -1,0 +1,102 @@
+.body {
+    font-family: "Arial", sans-serif;
+    background-color: linear-gradient(180deg, rgba(75, 118, 186, 0) 0%, #4B76BA 41.75%, rgba(75, 118, 186, 0) 94.55%);
+    /* Soft background color */
+    color: #606060;
+}
+
+
+/* .our{
+    background-color: #f9f6f6;
+    padding: 10px;
+} */
+/* .my-5{
+    background: linear-gradient(180deg, rgba(75, 118, 186, 0) 0%, #4B76BA 41.75%, rgba(75, 118, 186, 0) 94.55%);
+} */
+
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.section-text {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+button {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    border: none;
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column-reverse;
+        /* Stacks image and text for smaller screens */
+    }
+}
+/* General styles for the container and row */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+  }
+  
+  /* Media query for mobile view */
+  @media (max-width: 768px) {
+    .our .row {
+      flex-direction: column; /* Stack content vertically */
+    }
+  
+    /* Make the image always come first */
+    .our .row > div:first-child {
+      order: 1; /* Ensure the first div (image) appears first */
+    }
+  
+    .our .row > div:last-child {
+      order: 2; /* Ensure the second div (text) appears second */
+    }
+  }
+  
+  /* General styling for text and image */
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .section-text {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  .img-fluid {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+  

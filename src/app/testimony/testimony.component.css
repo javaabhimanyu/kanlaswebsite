@@ -1,0 +1,122 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+* {
+    font-family: "DM Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-weight: 400;
+    word-wrap: break-word;
+    /* font-size: 16px; */
+    color: #606060;
+}
+
+/* Ensure cards are consistent in layout and responsive */
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 100%;
+    /* Full width for responsiveness */
+    max-width: 800px;
+    /* Adjust for larger screens */
+    margin: auto;
+    /* Center align cards */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.left-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.right-section {
+    flex: 2;
+    padding: 10px;
+}
+
+.quote-icon {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1;
+    color: #000000;
+}
+
+h5 {
+    font-weight: bold;
+}
+
+.text-muted {
+    color: #6c757d !important;
+}
+
+/* Media query for smaller devices */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        /* Stack content vertically */
+        text-align: center;
+        /* Center-align for smaller screens */
+    }
+
+    .left-section,
+    .right-section {
+        padding: 5px;
+    }
+
+    .quote-icon {
+        font-size: 2rem;
+    }
+}
+img[_ngcontent-ng-c3337455004], svg[_ngcontent-ng-c3337455004] {
+    vertical-align: middle;
+    width: 120px;
+    padding-bottom: 8px;
+}
+/* General Styling */
+.value-card {
+    background-color: #f9f9f9;
+    padding: 40px;
+    border-radius: 12px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    border-radius: 12px;
+  }
+  
+  /* Profile Image */
+  img {
+    border: 2px solid #ddd;
+    padding: 2px;
+  }
+  
+  /* Carousel Styling */
+  .carousel-inner {
+    text-align: center;
+  }
+  
+  .carousel-control-prev-icon,
+  .carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    padding: 10px;
+  }
+  
+  .carousel-control-prev-icon:hover,
+  .carousel-control-next-icon:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Quote Icon */
+  i {
+    font-size: 24px;
+    color: #6c757d;
+  }
+  
